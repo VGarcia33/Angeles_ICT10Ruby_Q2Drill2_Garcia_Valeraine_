@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET OPERATORS</title>
+    <style>
+
+        #container {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #1e4d2a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+       
+        h1,p{
+            color: #97d799;
+        }
+
+
+        #box{
+            background-color: #328a50;
+            padding: 25px;
+            border-radius: 8px;
+            width: 340px;
+            max-width: 100%;
+        }
+       
+
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+       
+        select, input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #97d799;
+            box-sizing: border-box;
+         }
+
+
+         button{
+            background-color: #0f501f;
+            color:  #97d799;
+         }
+    </style>
+
+
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025/2.2/core.css">
+    <script type="module" src=https://pyscript.net/releases/2025/2.2/core.js></script>
+</head>
+<body>
+ <div id="container">
+    <h1> THE GLADE</h1>
+    <p>Gladers of the Maze come one, come all!</p>
+
+     <div id="box">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" placeholder="Enter your First Name">
+        <br><br>
+
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" placeholder="Enter your Last Name">
+        <br><br>
+
+
+        <button type="button" py-click="all_groups">Enter</button>
+
+
+        <p id="message"></p>
+
+
+        <py-script src="main.py"></py-script>
+
+     </div>
+ </div>
+
+</body>
+</html>
